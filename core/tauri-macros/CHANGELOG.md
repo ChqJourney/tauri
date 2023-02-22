@@ -1,5 +1,23 @@
 # Changelog
 
+## \[1.2.2]
+
+- Added the `additional_browser_args` option to the window configuration.
+  - Bumped due to a bump in tauri-utils.
+  - [3dc38b15](https://www.github.com/tauri-apps/tauri/commit/3dc38b150ea8c59c8ba67fd586f921016928f47c) feat(core): expose additional_browser_args to window config (fix: [#5757](https://www.github.com/tauri-apps/tauri/pull/5757)) ([#5799](https://www.github.com/tauri-apps/tauri/pull/5799)) on 2022-12-14
+- Added the `content_protected` option to the window configuration.
+  - Bumped due to a bump in tauri-utils.
+  - [4ab5545b](https://www.github.com/tauri-apps/tauri/commit/4ab5545b7a831c549f3c65e74de487ede3ab7ce5) feat: add content protection api, closes [#5132](https://www.github.com/tauri-apps/tauri/pull/5132) ([#5513](https://www.github.com/tauri-apps/tauri/pull/5513)) on 2022-12-13
+- Correctly determine mime type of `.less`, `.sass` and `.styl` files.
+  - Bumped due to a bump in tauri-utils.
+  - [5fdf8dcb](https://www.github.com/tauri-apps/tauri/commit/5fdf8dcb8ed171d06121dceb32078a7e4f86cc64) fix(core): mime type of .less, .sass and .styl files ([#6316](https://www.github.com/tauri-apps/tauri/pull/6316)) on 2023-02-19
+- Add initial support for building `nsis` bundles on non-Windows platforms.
+  - Bumped due to a bump in tauri-utils.
+  - [60e6f6c3](https://www.github.com/tauri-apps/tauri/commit/60e6f6c3f1605f3064b5bb177992530ff788ccf0) feat(bundler): Add support for creating NSIS bundles on unix hosts ([#5788](https://www.github.com/tauri-apps/tauri/pull/5788)) on 2023-01-19
+- Add `nsis` bundle target
+  - Bumped due to a bump in tauri-utils.
+  - [c94e1326](https://www.github.com/tauri-apps/tauri/commit/c94e1326a7c0767a13128a8b1d327a00156ece12) feat(bundler): add `nsis`, closes [#4450](https://www.github.com/tauri-apps/tauri/pull/4450), closes [#2319](https://www.github.com/tauri-apps/tauri/pull/2319) ([#4674](https://www.github.com/tauri-apps/tauri/pull/4674)) on 2023-01-03
+
 ## \[1.2.1]
 
 - Fix `allowlist > app > show/hide` always disabled when `allowlist > app > all: false`.
